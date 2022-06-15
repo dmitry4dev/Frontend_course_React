@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Registration Form</title>
+</head>
+<body>
+  <h1 class="title">Форма регистрации</h1>
+  <form action="#" class="form" method="post">
+    <label for="name" class="form__label">Имя*
+      <input type="text" class="form__input" name="name" placeholder="Введите имя" required>
+    </label>
+    <label for="surename" class="form__label">Фамилия*
+      <input type="text" class="form__input" name="surename" placeholder="Введите фамилию" required>
+    </label>
+    <label for="birthdate" class="form__label">Дата рождения*
+      <input type="date" class="form__input" name="birthdate" required>
+    </label>
+    <label for="email" class="form__label">Емайл*
+      <input type="email" class="form__input" name="email" placeholder="Введите емайл" required>
+    </label>
+    <label for="login" class="form__label">Логин*
+      <input type="text" class="form__input" name="login" placeholder="Придумайте логин" required>
+    </label>
+    <label for="password" class="form__label">Пароль*
+      <input type="password" class="form__input" name="password" placeholder="Придумайте пароль" required>
+    </label>
+    <fieldset class="form__fieldset">
+      <legend class="form__legend">Пол</legend>
+      <label for="male" class="form__label">Мужчина</label>
+      <input type="radio" id="male" class="form__radio" name="gender" value="male">
+      <label for="feemale" class="form__label">Женщина</label>
+      <input type="radio" id="feemale" class="form__radio" name="gender" value="feemale">
+    </fieldset>
+    <textarea name="message" class="form__textarea" placeholder="Расскажите о себе"></textarea>
+    <label for="agreement" class="form__label label-checkbox">Я подтверждаю верность введенных данных
+      <input type="checkbox" class="form__checkbox" name="agreement">
+    </label>
+    <input type="submit" class="form__btn" value="Регистрация">
+  </form>
+</body>
+</html>
